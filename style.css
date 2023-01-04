@@ -25,7 +25,7 @@ body{
     flex-direction: column;
     background-color: hsl(0, 0%, 98%);
 }
-section{
+main{
     width: 100%;
     margin: 5% auto;
 }
@@ -33,12 +33,12 @@ section{
     text-align: center;
     color: hsl(229, 6%, 66%);
 }
-.top-panel h2{
+.top-panel .first{
     margin-bottom: 5px;
     font-size: 25px;
     font-weight: 400;
 }
-.top-panel h1{
+.top-panel .second{
     margin-bottom: 15px;
     font-weight: 600;
     font-size: 25px;
