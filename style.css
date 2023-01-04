@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-darkblue: hsl(234, 12%, 34%);
+    --Grayish-blue: hsl(229, 6%, 66%);
+    --Very-lightgray: hsl(0, 0%, 98%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    width: 100%;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 98%);
+}
+section{
+    width: 100%;
+    margin: 5% auto;
+}
+.top-panel{
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+}
+.top-panel h2{
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.top-panel h1{
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 25px;
+    color: hsl(234, 12%, 34%);
+}
+.top-panel p{
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 1.7em;
+    margin-bottom: 25px;
+}
+.container{
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    position: relative;
+    width: 320px;
+    height: 200px;
+    background-color: hsl(0, 0%, 98%);
+    box-shadow: -4px 10px 15px rgba(113, 154, 187, 0.25);
+    border-radius: 5px;
+    padding: 20px;
+}
+.one{
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.two{
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.three{
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.four{
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+.card h3{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 10px;
+}
+.card p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--Grayish-blue);
+    line-height: 1.7em;
+    margin-bottom: 27px;
+}
+.card img{
+    float: right;
+    width: 60px;
+}
+.box-left, .box-right{
+    align-self: center;
+}
+.box-middle .card:nth-child(1){
+    margin-bottom: 20px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media screen and (max-width:375px) {
+    .container{
+        flex-direction: column;
+    }
+    .top-panel p{ 
+      margin: 0 20px;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+}
